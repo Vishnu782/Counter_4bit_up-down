@@ -53,19 +53,19 @@ Functional Simulation:
 
 ### Verilog code for 4-Bit Up-Down Counter:`timescale 1ns / 1 ns
 
-module counter(clk,m,rst,count);
-input clk,m,rst;
+module counter(clk,m,rst,count);        
+input clk,m,rst;        
 output reg [3:0] count;
-always@(posedge clk or negedge rst)
-begin
-if (!rst)
-count=0;
-else if(m)
-count=count+1;
-else
-count=count-1;
-end
-endmodule
+always@(posedge clk or negedgerst)         
+begin         
+if (!rst)         
+count=0;         
+else if(m)         
+count=count+1;          
+else            
+count=count-1;      
+end      
+endmodule              
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
